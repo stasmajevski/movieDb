@@ -1,11 +1,22 @@
 package com.example.user.moviedb.model;
 
 public class Movie {
+
     private int id;
     private String title;
     private String description;
     private int rating;
+    private int year;
     private Category categoryId;
+
+    public Movie(int id, String title, String description, int rating, int year, Category categoryId) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.rating = rating;
+        this.year = year;
+        this.categoryId = categoryId;
+    }
 
     public int getId() {
         return id;
@@ -17,6 +28,15 @@ public class Movie {
 
     public String getTitle() {
         return title;
+    }
+
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public void setTitle(String title) {
