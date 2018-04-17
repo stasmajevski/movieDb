@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".ui.MoviesActivity">
         </activity>
+        <activity android:name=".ui.MovieDetailsActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.user.moviedb.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,13 +43,13 @@ public class MoviesActivity extends AppCompatActivity {
                                                    movieList.getMovies().get(i).getCategoryId());
             newEntry.setId(i);
 
-            final int id = i+1;
+            final int movieID = i+1;
 
             newEntry.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(MoviesActivity.this,String.valueOf(id),Toast.LENGTH_SHORT).show();
-                    //movieDetails();
+                    Toast.makeText(MoviesActivity.this,String.valueOf(movieID),Toast.LENGTH_SHORT).show();
+                    movieDetails(movieID);
                 }
             });
 
@@ -56,8 +57,11 @@ public class MoviesActivity extends AppCompatActivity {
         }
     }
 
-   /* private void movieDetails() {
-    }*/
+    private void movieDetails(int movieID) {
+        Intent intent = new Intent(this, MovieDetailsActivity.class);
+        intent.putExtra("movieID", movieID);
+        startActivity(intent);
+    }
 
     private TableRow getNewTableRowView(String title, int year, int rating, Category categoryID) {
 
