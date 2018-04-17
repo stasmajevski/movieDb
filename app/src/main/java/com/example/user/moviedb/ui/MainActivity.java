@@ -10,14 +10,12 @@ import com.example.user.moviedb.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button enterDbButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        enterDbButton = (Button)findViewById(R.id.enterDbButton);
+        Button enterDbButton = (Button) findViewById(R.id.enterDbButton);
 
         enterDbButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -38,5 +38,16 @@ public class MovieList {
                 )
         );
 
+        movies.add(
+                new Movie(
+                        3,
+                        "Molly's Game",
+                        "The true story of Molly Bloom, an Olympic-class skier who ran the world's most exclusive high-stakes poker game and became an FBI target.",
+                        8,
+                        2017,
+                        new Category(2,"Crime")
+                )
+        );
+
     }
 }

@@ -2,4 +2,5 @@
     <string name="app_name">movieDb</string>
     <string name="movie_database">Movie Database</string>
     <string name="enter_movie_database">ENTER MOVIE DATABASE</string>
+    <string name="rating">★</string>
 </resources>

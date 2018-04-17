@@ -43,7 +43,7 @@ public class MoviesActivity extends AppCompatActivity {
                                                    movieList.getMovies().get(i).getCategoryId());
             newEntry.setId(i);
 
-            final int movieID = i+1;
+            final int movieID = i;
 
             newEntry.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -79,8 +79,7 @@ public class MoviesActivity extends AppCompatActivity {
         for (String value : Values) {
             TextView textView = new TextView(this);
             textView.setText(value);
-            rowView.addView(textView, 200, 150);
+            rowView.addView(textView, 310, 150);
         }
-
     }
 }
