@@ -21,6 +21,11 @@
         </activity>
         <activity android:name=".ui.MovieDetailsActivity">
         </activity>
+        
+        <provider
+            android:authorities="com.example.user.moviedb.provider"
+            android:name=".MovieContentProvider"
+            android:exported="true"/>
     </application>
 
 </manifest>

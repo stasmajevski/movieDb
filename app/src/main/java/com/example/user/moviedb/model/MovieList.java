@@ -16,9 +16,10 @@ public class MovieList {
     private List<Movie> movies = new ArrayList<>();
 
     public MovieList(){
+        int i = 1;
         movies.add(
                 new Movie(
-                1,
+                 i++,
                 "Okja",
                 "A young girl risks everything to prevent a powerful, multinational company from kidnapping her best friend - a fascinating beast named Okja.",
                 7,
@@ -29,7 +30,7 @@ public class MovieList {
 
         movies.add(
                 new Movie(
-                        2,
+                        i++,
                         "Okja2",
                         "A young girl risks everything to prevent a powerful, multinational company from kidnapping her best friend - a fascinating beast named Okja.",
                         7,
@@ -40,7 +41,7 @@ public class MovieList {
 
         movies.add(
                 new Movie(
-                        3,
+                        i++,
                         "Molly's Game",
                         "The true story of Molly Bloom, an Olympic-class skier who ran the world's most exclusive high-stakes poker game and became an FBI target.",
                         8,
